@@ -7,10 +7,8 @@ def is_prime(n):
         return False        
     for i in range(3, int(n**0.5) + 1, 2):
         if n % i == 0:
-            return False  # Found a factor, not prime
-            
-    return True  # No factors found, it's prime
-
+            return False
+    return True
 
 class Solution:
     def countPrimeSetBits(self, left: int, right: int) -> int:
